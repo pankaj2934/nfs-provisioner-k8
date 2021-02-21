@@ -1,0 +1,16 @@
+for kubernetes 1.20 add below in apiserver 
+
+drwxr-xr-x 2 root root 4096 Feb 21 04:50 ./
+drwxr-xr-x 4 root root 4096 Feb 21 02:43 ../
+-rw------- 1 root root 2177 Feb 21 02:43 etcd.yaml
+-rw------- 1 root root 3962 Feb 21 02:43 kube-apiserver.yaml
+-rw------- 1 root root 3350 Feb 21 02:43 kube-controller-manager.yaml
+-rw------- 1 root root 1384 Feb 21 02:43 kube-scheduler.yaml
+root@master:/etc/kubernetes/manifests# vi kube-apiserver.yaml
+root@master:/etc/kubernetes/manifests# pwd
+/etc/kubernetes/manifests
+
+
+--feature-gates=RemoveSelfLink=false
+
+
